@@ -6,7 +6,7 @@ const TopHeadline = () => {
 
   useEffect(() => {
     const url =
-      "https://newsapi.org/v2/everything?q=tesla&from=2021-03-06&sortBy=publishedAt&apiKey=5d02341651aa48b69ed59a0c8b90d961";
+      "https://newsapi.org/v2/everything?q=tesla&from=2021-04-28&sortBy=publishedAt&apiKey=5d02341651aa48b69ed59a0c8b90d961";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setArticles(data.articles));
